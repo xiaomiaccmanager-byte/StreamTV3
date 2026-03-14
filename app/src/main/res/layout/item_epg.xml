@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_vertical"
+    android:paddingTop="12dp" android:paddingBottom="12dp">
+    <TextView android:id="@+id/tv_time" android:layout_width="52dp"
+        android:layout_height="wrap_content" android:textColor="#555555" android:textSize="12sp"/>
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+        android:layout_height="wrap_content" android:orientation="vertical"
+        android:layout_marginStart="12dp">
+        <TextView android:id="@+id/tv_show" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#E4E4E4"
+            android:textSize="13sp" android:textStyle="bold" android:singleLine="true"
+            android:ellipsize="end"/>
+        <TextView android:id="@+id/tv_ep" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="#555555"
+            android:textSize="11sp" android:singleLine="true" android:ellipsize="end"/>
+        <ProgressBar android:id="@+id/progress" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="3dp"
+            android:progressTint="#E8420A" android:progressBackgroundTint="#22222A"
+            android:max="100" android:layout_marginTop="5dp" android:visibility="gone"/>
+    </LinearLayout>
+    <TextView android:id="@+id/badge_now" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="СЕЙЧАС" android:textColor="#FFFFFF"
+        android:textSize="8sp" android:background="#E8420A" android:paddingStart="6dp"
+        android:paddingEnd="6dp" android:paddingTop="3dp" android:paddingBottom="3dp"
+        android:layout_marginStart="8dp" android:visibility="gone"/>
+</LinearLayout>

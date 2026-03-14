@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#0A0A0C" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="center" android:padding="24dp"
+        android:minHeight="600dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="&#9658; STREAMTV" android:textColor="#E8420A" android:textSize="32sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Любой сайт — как телевидение" android:textColor="#555555"
+            android:textSize="13sp" android:layout_marginBottom="40dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="ИСТОЧНИК КОНТЕНТА" android:textColor="#555555" android:textSize="10sp"
+            android:letterSpacing="0.2" android:layout_marginBottom="8dp"/>
+        <EditText android:id="@+id/input_url" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="#1A1A1E"
+            android:paddingStart="14dp" android:paddingEnd="14dp"
+            android:textColor="#E4E4E4" android:textColorHint="#555555"
+            android:hint="https://www.lostfilm.tv/" android:text="https://www.lostfilm.tv/"
+            android:inputType="textUri" android:singleLine="true" android:textSize="13sp"
+            android:layout_marginBottom="16dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="БЫСТРЫЙ ВЫБОР" android:textColor="#555555" android:textSize="10sp"
+            android:letterSpacing="0.2" android:layout_marginBottom="10dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="8dp">
+            <Button android:id="@+id/btn_lostfilm" android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="36dp" android:text="LostFilm" android:textSize="11sp"
+                android:textColor="#AAAAAA" android:background="#1A1A1E" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_rezka" android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="36dp" android:text="HDRezka" android:textSize="11sp"
+                android:textColor="#AAAAAA" android:background="#1A1A1E" android:layout_marginEnd="6dp"/>
+            <Button android:id="@+id/btn_kinogo" android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="36dp" android:text="Kinogo" android:textSize="11sp"
+                android:textColor="#AAAAAA" android:background="#1A1A1E"/>
+        </LinearLayout>
+        <Button android:id="@+id/btn_launch" android:layout_width="match_parent"
+            android:layout_height="52dp" android:text="&#9658;  ЗАПУСТИТЬ" android:textColor="#FFFFFF"
+            android:textSize="14sp" android:background="#E8420A" android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"/>
+        <Button android:id="@+id/btn_demo" android:layout_width="match_parent"
+            android:layout_height="44dp" android:text="Демо-режим (без интернета)"
+            android:textColor="#666666" android:textSize="12sp" android:background="#1A1A1E"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Плеер разберёт контент по категориям&#10;и создаст телеканалы с расписанием"
+            android:textColor="#333333" android:textSize="11sp" android:gravity="center"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
